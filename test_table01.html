@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 연습</title>
+    <!-- <style>은 아래 HTML 태그들을 이쁘게 꾸며주는 태그이다. -->
+    <style>
+        /* CSS 작성방법 3가지 
+            1.태그 이름을 이용
+            2.class명을 이용
+            3.id명을 이용
+        */
+         body{
+            /* 글꼴의 크기를 지정하는 CSS명령어 */
+            font-size : 14px;
+         }
+
+         table{
+            /* 테이블의 가로 크기를 지정하는 CSS */
+            width : 700px;
+            /* 셀 사이 간격을 없애고 테두리를 합치는 CSS */
+            border-collapse: collapse;
+            /* 선그리기 : 선사이즈, 실선, 검정색 */
+            /* border: 1px solid black; */
+         }
+         /* 공통으로 CSS 해야하는 경우, **,** 로 나열한다. */
+         thead th,
+         tbody td{
+            border: 1px solid black;
+            /* table 안의 문자를 가운데 정렬 */
+            text-align : center;
+            /* 안쪽 여백을 주고 싶을 때 쓰는 CSS */
+            /* padding : 5px; => 상하좌우 전부 5px*/
+            padding: 5px;
+         }
+         thead th{
+            /* th 부분에 배경색을 지정하는 CSS */
+            background-color: dodgerblue;
+            /* 글꼴 색 변경은 그냥 color */
+            color: #fff;
+         }
+         table caption{
+            text-align: right;
+            /* 바깥쪽 여백을 주고싶을 때 쓰는 CSS */
+            margin-bottom:10px;
+         }
+    </style>
+</head>
+<body>
+    
+    <!-- 테이블 작성시 웹 표준과 웹 접근성을 고려하여
+        <thead>, <tbody>, <tfoot> 태그를 이용하여 작성함을 원칙으로 한다. 
+    -->
+
+    <table>
+        <caption>부가세(VAT) 포함된 실제 지불금액 입니다.</caption>
+        <!-- thead 부분으로 필드명 기재 -->
+         <thead>
+            <tr>
+                <th>상품명</th>
+                <th>월정액</th>
+                <th>제공혜택</th>
+            </tr>
+         </thead>
+         <!-- tbody 부분으로 데이터 기재 -->
+         <tr>
+            <td>지상파 무제한 즐기기</td>
+            <td>14,300원</td>
+            <td>지상파 3사의 드라마, 예능 프로그램을 가장 빠르게 가장 경제적 서비스</td>
+         </tr>
+         <tr>
+            <td>CJENM 무제한 즐기기</td>
+            <td>14,300원</td>
+            <td>모든 드라마, 예능프로그램을 무제한 볼수있는 인기 월정액 서비스</td>
+         </tr>
+         <tr>
+            <td>JTBC 무제한 즐기기</td>
+            <td>7,700원</td>
+            <td>JTBC 드라마, 예능 프로그램을 무제한으로 즐길 수 있는 인기 월정액 서비스</td>
+         </tr>
+    </table>
+
+    <!-- 병합 테이블 -->
+    <hr/>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">기온</th>
+            </tr>
+            <tr>
+            <th>월</th>
+            <th>높음</th>
+            <th>낮은</th>
+            <th>평균</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1월</td>
+                <td>48</td>
+                <td>36</td>
+                <td>43</td>
+            </tr>
+            <tr>
+                <td>2월</td>
+                <td>55</td>
+                <td>34</td>
+                <td rowspan='2'>40</td>
+            </tr>
+            <tr>
+                <td>3월</td>
+                <td>44</td>
+                <td>22</td>
+                <!-- <td>40</td>  병합했으니 생략-->
+                 <!-- 입력하면 그 다음칸으로 빠짐 -->
+            </tr>
+            <tr>
+                <td>4월</td>
+                <td>52</td>
+                <td>46</td>
+                <td>44</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
