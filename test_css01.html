@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 설명</title>
+    <style>
+        /*  p라는 태그에 우선순위가 존재 => p태그라면 무조건 적용 */
+        p{color: red;}
+       /* 
+       띄어쓰기 여부에 따라 적용범위가 완전히 다르다!!!!!
+         p.center 인경우 => p라는 태그의 class 이름이 center인 경우만 css 적용됨.
+         p .center 인경우=> p라는 태그의 안에 있는 자식 태그가 가진 class 이름이 center인 경우 css 적용됨.
+            p의 자손도 전부 해당(자식태그의 자식 그 자식 그 자식... 전부 적용됨)
+       */
+        p .center{color:dodgerblue}
+
+        /* div 안의 자식, 자손 중 span 에 모두 적용 */
+        div span{
+            background-color: aquamarine;
+        }
+        /* div 안의 자식 중 span 에게만 적용 */
+        div > span{
+            color: darkviolet;
+        }
+    </style>
+</head>
+<body>
+    <p class="center">이건 파란색</p>
+    <div class="center">이건 선택안됨1</div>
+    <div><span class="center">이건 선택안됨2</span></div>
+    <div><em><span>이건 선택안됨3</span></em></div>
+
+    <p><span class="center">이건 선택안됨</span></p>
+    <p><span><em class="center">이건 선택안됨</em></span></p>
+    <p><span><em><strong class="center">이건 선택안됨</strong></em></span></p>
+    
+</body>
+</html>

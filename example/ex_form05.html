@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>연습문제05</title>
+    <!-- ex_form05.css 파일을 링크로 연결 -->
+     <link rel="stylesheet" href="/styleCss/ex_form05.css">
 </head>
 <body>
     <h3>여름방학 특강 신청하기</h3>
@@ -23,14 +25,14 @@
             <ul>
                 <li>
                     <label class="title" for="name">이름</label>
-                    <input type="text" placeholder="에) 홍길동" name="user_name" id="name"/>
+                    <input type="text" placeholder="예) 홍길동" name="user_name" id="name"/>
                 </li>
                 <li>
-                    <label for="email">이메일</label>
+                    <label class="title" for="email">이메일</label>
                     <input type="email" placeholder="예) example@exam.com" name="user_email" id="email"/>
                 </li>
                 <li>
-                    <label for="password">비밀번호</label>
+                    <label class="title" for="password">비밀번호</label>
                     <input type="password" placeholder="비밀번호를 입력하세요" name="user_pw" id="password"/>
                 </li>
                 <li>
@@ -50,8 +52,8 @@
                     <input type="radio" name="user_gender" value="여자" id="frmale"/>
                     <label for="female">여자</label>
                 </li>
-                <li class="hoby_item">
-                    <span class="title">성별</span>
+                <li class="hobby_item">
+                    <span class="title">취미</span>
                     <input type="checkbox" name="user_hobby" id="hobby1" />
                     <label for="hobby1">여행</label>
 

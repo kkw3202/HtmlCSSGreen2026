@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 연습문제 04</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <h4>예약 날짜/시간 입력</h4>
+        <ul>
+            <li>
+                <label for="month-input">month : </label>
+                <!-- type=month : 연도, 월 (YYYY-MM)을 선택하는 피커가 생성됨 -->
+                <input type="month" id="month-input" value="2026-09" name="reservation_month"/>
+            </li>
+            <li>
+                <label for="week-input">week : </label>
+                <!-- type=month : 연도, 주차 (YYYY-Wxx)을 선택하는 주 단위 피커가 생성됨 -->
+                <input type="week" id="month-input" value="2026-W30" name="reservation_week"/>
+            </li>
+            <li>
+                <label for="date-input">date : </label>
+                <!-- type=month : 연도, 월, 일 을 선택하는 주 단위 피커가 생성됨 -->
+                <input type="date" id="date-input" value="2026-09-03" name="reservation_date"/>
+            </li>
+            <li>
+                <label for="time-input">time : </label>
+                <!-- type=month : 시, 분을 선택하는 주 단위 피커가 생성됨 -->
+                <input type="time" id="time-input" value="14:52" name="reservation_time"/>
+            </li>
+            <li>
+                <label for="local-input">local : </label>
+                <!-- type=month :  선택하는 년/월/일 과 시/분 을 동시에 선택하는 피커가 생성됨 -->
+                <input type="datetime-local" id="local-input" value="2026-09-11 14:52" name="reservation_time"/>
+            </li>
+        </ul>
+        <!-- 인원수 스핀버튼 -->
+        <h4>인원수</h4>
+        <ul>
+            <li>
+                <label for="poeplecount">예약 인원:</label>
+                <!-- type="number" 숫자만 입력 가능한 스핀박스 형태의 필드
+                        min="1" max="10" 최솟값 :1 최댓값:10
+                        -value="2" 기본값 설정(2)
+                -->
+                <input type="number" id="poeplecount" value="2" min="1" max="10"/>
+            </li>
+        </ul>
+        <!-- 만족도 평가 -->
+         <ul>
+            <li>s
+                <label for="status">만족도</label>
+                <!-- type="range" : 드래그해서 값을 조절하는 슬라이더 조작바 
+                        min="0" max="10" : 0~10 사이 값
+                -->
+                <input type="range" id="status" name="status" min="0" max="10" />
+            </li>
+         </ul>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 연습문제 06</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color: #fff;
+        }
+        h1, p{
+            text-align: center;
+        }
+        h1{
+            margin: 15px;
+        }
+        p{
+            margin: 10px 0;
+        }
+        form{
+            background-color: #FAFAFA;
+            border: 2px solid #F1F1F1;
+            border-radius:10px;
+            width:800px;
+            margin: 0 auto;
+            font-size:13px;
+            font-family: sans-serif;
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.384);
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            margin: 20px;
+        }
+        /* 타이틀 공통 CSS */
+        .title{
+            font-weight: bold;
+            display: inline-block;
+            width: 130px;
+        }
+        /* 메모에만 적용되는 CSS */
+        .title_memo{
+            vertical-align: top;
+        }
+        input[type='text'],
+        input[type='password']{
+            width:200px;
+        }
+        input[type='tel'].tel_num{
+            width:100px;
+        }
+        input[type='tel'].tel_h{
+            width:50px;
+        }
+
+        input[type='tel'].tel_num,
+        input[type='tel'].tel_h{
+            text-align: center;
+        }
+
+        input[type='text'],
+        input[type='password'],
+        input[type='tel'].tel_num,
+        input[type='tel'].tel_h{
+            height: 20px;
+            border: 3px solid #F1F1F1;
+            border-radius:5px;
+        }
+
+        input[type='radio'],
+        input[type='checkbox']{
+            margin: 0 3px;
+        }
+        li.btn{
+            text-align: center;
+        }
+        button[type='submit'],
+        button[type='reset']{
+            height: 30px;
+            width: 70px;
+            border: none;
+            border-radius: 5px;
+        }
+        button[type='submit']{
+            background-color: rgb(75, 175, 80);
+            color: #fff;
+        }
+        button[type='reset']{
+            background-color: rgb(244,66,55);
+            color: #fff;
+        }
+        button[type='submit']:hover{
+            background-color: rgb(0, 175, 80);
+            color: #fff;
+        }
+        button[type='reset']:hover{
+            background-color: rgb(244,66,0);
+            color: #fff;
+        }
+        textarea{
+            width: 200px;
+            height: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Sign UP</h1>
+
+    <p>Become a member of Andrew's Company, and enjoy a variety of benefits.</p>
+
+    <form action="#" method="POST">
+        <ul>
+            <!-- 이름 -->
+            <li>
+                <label class="title" for="name">Name</label>
+                <input type="text" id="name" name="user_name" placeholder="ex) Andrew Baker" />
+            </li>
+            <!-- 아이디 -->
+            <li>
+                <label class="title" for="id">ID</label>
+                <input type="text" id="id" name="user_id" placeholder="ex) andrew1021" />
+            </li>
+            <!-- 비밀번호 -->
+            <li>
+                <label class="title" for="pw">Password</label>
+                <input type="password" id="pw" name="user_pw" placeholder="enter password" />
+            </li>
+            <!-- 비밀번호 확인 -->
+            <li>
+                <label class="title" for="chkPw">Confrim Password</label>
+                <input type="password" id="chkPw" placeholder="enter password again" />
+            </li>
+            <!-- 전화번호 -->
+            <li>
+                <label class="title" for="telNum">Mobile</label>
+                <input class="tel_h" type='tel' name="telnum" list="tel_head" placeholder="010" />
+                <datalist id="tel_head">
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                </datalist>
+                <label for="telNum2">-</label>
+                <input class="tel_num" type="tel" name="user_tel" id="telNum" placeholder="1234" />
+                <label for="telNum3">-</label>
+                <input class="tel_num" type="tel" name="user_tel" placeholder="5678" />
+            </li>
+            <!-- 이메일 -->
+            <li>
+                <label class="title" for="mail">E-mail</label>
+                <input type="text" id="mail" name="user_email" placeholder="ex) andrew1021" />
+                <label class="mail_back" for="mail_back"> @ </label>
+                <input type="text" id="mail_site" name="user_email" placeholder="choose your email site or enter it"/>
+                <select>
+                    <option value="" name="user_mail_site">Direct input</option>
+                    <option value="naver" name="user_mail_site">naver.com</option>
+                    <option value="daum" name="user_mail_site">daum.net</option>
+                    <option value="gmail" name="user_mail_site">gmail.com</option>
+                </select>
+            </li>
+            <!-- 메일 수신 동의 -->
+            <li>
+                <label class="title" for="mail_agree">Whether to receive email</label>
+                <input type="checkbox" id="mail_agree" name="ismail_agree" />
+                <label for="mail_agree">Acceptance</label>
+            </li>
+            <!-- 취미 -->
+            <li>
+                <label class="title">Interest</label>
+                <input type="checkbox" id="movie" name="user_interest" />
+                <label for="movie">Movie</label>
+                <input type="checkbox" id="theater" name="user_interest" />
+                <label for="theater">Theater</label>
+                <input type="checkbox" id="" name="user_interest" />
+                <label for="travel">Travel</label>
+                <input type="checkbox" id="climbing" name="user_interest" />
+                <label for="climbing">Mountain climbing</label>
+                <input type="checkbox" id="restaurant" name="user_interest" />
+                <label for="restaurant">Visiting a restaurant</label>
+                <input type="checkbox" id="volunteer" name="user_interest" />
+                <label for="volunteer">Volunteer</label>
+                <input type="checkbox" id="etc" name="user_interest" />
+                <label for="etc">Etc</label>
+            </li>
+            <!-- 성별 -->
+            <li>
+                <label class="title">Gender</label>
+                <input type="radio" id="male" name="user_gender" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="user_gender" />
+                <label for="female">Female</label>
+            </li>
+            <!-- 사이트를 알게된 계기 -->
+             <li>
+                <label class="title">Path learned</label>
+                <select>
+                    <option value="" name="user_lp">Choose</option>
+                    <option value="internet" name="user_lp">Internet</option>
+                    <option value="acquaintance" name="user_lp">Acquaintance introduction</option>
+                    <option value="etc" name="user_lp">Etc</option>
+                </select>
+             </li>
+             <!-- 기타사항 -->
+              <li>
+                <label class="title title_memo" for="memo">Memo</label>
+                <textarea id="memo" name="user_memo"></textarea>
+              </li>
+              <!-- 버튼 -->
+              <li class="btn">
+                <button type="submit">Sign up</button>
+                <button type="reset">Cancel</button>
+              </li>
+        </ul>
+    </form>
+
+    
+</body>
+</html>

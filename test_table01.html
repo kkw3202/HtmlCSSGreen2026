@@ -27,12 +27,14 @@
          /* 공통으로 CSS 해야하는 경우, **,** 로 나열한다. */
          thead th,
          tbody td{
+            /* 웹 표준 상 모든 색은 코드로 CSS정의한다. */
             border: 1px solid black;
             /* table 안의 문자를 가운데 정렬 */
             text-align : center;
             /* 안쪽 여백을 주고 싶을 때 쓰는 CSS */
             /* padding : 5px; => 상하좌우 전부 5px*/
             padding: 5px;
+            /* padding, margin 두 CSS모두 상하좌우 같은 사이즈의 여백을 준다 */
          }
          thead th{
             /* th 부분에 배경색을 지정하는 CSS */

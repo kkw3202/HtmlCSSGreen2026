@@ -1,0 +1,109 @@
+@charset 'utf-8';
+ /* 모든 기본 스타일을 초기화하는 CSS */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: sans-serif, Arial;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        h3{
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        form{
+            background-color: #fff;
+            padding: 20px;
+            width: 550px;
+            /* 폼이 화면의 중앙에 배치되게 지정하는 CSS */
+            /* 마진을 준다: 상하 좌우; */
+            margin: 0 auto;
+            border-radius: 10px;
+            /* 폼 주변에 옅은 그림자 효과를 지정 */
+            /* 박스에 그림자를 준다: x축 y축 번짐정도 색상(r,g,b,투명도) */
+            box-shadow: 0 4px 5px rgba(0,0,0,0.3);
+        }
+        fieldset{
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            /* 패딩을 준다: 상하 좌우 */
+            padding: 15px 20px;
+            margin: 20px;
+        }
+        legend{
+            font-weight:bold;
+            padding: 0 10px;
+        }
+        /* ul의 리스트 스타일 제거 */
+        ul{
+            list-style: none;
+        }
+        ul li{
+            margin-bottom: 15px;
+        }
+        /* 클래스 속성으로 작성된 이름을 CSS로 작성 할 때는 반드시 클래스 앞에 **.** 을 붙임. */
+        .title{
+            /* .title로 정의된 태그는 전부 <label>이다. 이는 인라인 태그로, 너비를 가질 수 없다.*/
+                /* 단, 인라인을 블록이나 인라인으로 바꿔 줄 수 있다! display */
+            display: inline-block;
+            width: 80px;
+            font-weight: bold;
+        }
+        /* 성별 , 취미 부분 label 의 CSS부 */
+        .gender_item label,
+        .hobby_item label{
+            margin-right: 10px;
+        }
+        /* 기본입력창(텍스트, 이메일, 비밀번호, select 박스 공통) */
+        input[type='text'],
+        input[type='email'],
+        input[type='password'],
+        select{
+            width: 300px;
+            /* 300px 패딩 여백까지 포함한 크기로 지정하는 CSS */
+            box-sizing: border-box;
+            padding: 6px 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type='checkbox'],
+        input[type='radio']{
+            margin-right: 5px;
+        }
+        .btn{
+            text-align:center;
+        }
+        .btn button[type='submit'],
+        .btn button[type='reset']{
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            /* 버튼 위에 마우스를 올리면 손가락모양으로 변경 */
+            cursor: pointer;
+        }
+        .btn button[type='submit']{
+            background-color: #4caf50;
+            color: white;
+        }
+        .btn button[type='reset']{
+            background-color: #f44336;
+            color: white;
+        }
+        /* 신청, 취소 버튼 위에 마우스를 호버하면(올리면) 색상을 변경하는 CSS */
+        /* 태그 뒤에 :hover 붙이면 마우스 호버 시 아래와 같이 바뀜*/
+        .btn button[type='submit']:hover{
+            background-color: #4caf00;
+        }
+        .btn button[type='reset']:hover{
+            background-color: #f40000;
+        }
+        /* placeholder 에만 CSS */
+        input[type='text']::placeholder,
+        input[type='email']::placeholder,
+        input[type='password']::placeholder{
+            font-size: 12px;
+        }
