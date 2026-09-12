@@ -1,0 +1,188 @@
+@charset "utf-8";
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 50px 0;
+}
+
+h2{
+    text-align: center;
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 50px;
+}
+
+p.main{
+    text-align: right;
+    width: 640px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+hr,
+hr.main{
+    width:640px;
+    margin: 10px auto;
+    vertical-align: middle;
+}
+hr.main{
+    border: 1.5px solid black;
+}
+
+
+span{
+    color: #F07683;
+}
+
+span.requir,
+span.birth_input{
+    color: #999CBA;
+}
+
+form{
+    width: 640px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+form ul li label.title{
+    display: inline-block;
+    width: 139px;
+    height: 48px;
+    padding-top: 12px;
+}
+
+form ul li input[type="text"],
+form ul li input[type="password"],
+form ul li input[type="tel"],
+form ul li button.address_btn{
+    width: 333px;
+    height: 44px;
+}
+
+form ul li input[type="text"].email_input{
+    width: 168px;
+}
+
+form ul li span.email_at{
+    /* display: inline-block;
+    vertical-align: middle; */
+    color: #000;
+    /* border-top: 1px solid ;
+    border-bottom: 1px solid ; */
+    /* height: 44px; */
+}
+
+form ul li select.email_select{
+    width: 143px;
+    height: 44px;
+    cursor: pointer;
+}
+
+form ul li button.address_btn{
+    border: 1.5px solid #5F0080;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #5F0080;
+    cursor: pointer;
+}
+
+form ul li button img.address_btn_img{
+    width: 10px;
+    height: 10px;
+    margin: 0 10px; 
+}
+
+form ul li input.birth_input{
+    width: 100px;
+    height: 44px;
+}
+
+form ul li p.address_info{
+    text-align: left;
+    font-size: 12px;
+    margin-left: 139px;
+    margin-bottom: 20px;
+}
+
+form ul li input[type=radio],
+form ul li input[type=checkbox]{
+    margin-right: 5px;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+
+form ul li label.radio_option{
+    /* margin-top: 10px; 왜안되*/
+}
+
+
+form ul.agreement li.agree_detail_start{
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    margin-top: 5px;
+}
+
+form ul.agreement li.agree_detail_end{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+form ul.agreement li input{
+    margin: 10px 0;
+}
+
+form ul li button.tel_btn{
+    width: 120px;
+    height: 44px;
+    background-color: #fff;
+    color: #b5b6be;
+    border-radius: 3px;
+}
+
+form button[type=submit]{
+    width: 640px;
+    height: 52px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c8c8ca;
+    color: #fff;
+    font-size: 15px;
+}
+
+form ul li input[type="text"],
+form ul li input[type="password"],
+form ul li input[type="tel"],
+form ul li button.tel_btn,
+form ul li select.email_select
+{
+    border: 0.5px solid #b5b6beaf;
+}
+
+form ul li label.radio_option{
+    margin-right: 60px;
+}
+
+form ul.agreement li.detail_ad_agree{
+    margin-left: 30px;
+}
+
+form ul.agreement li a.agree_link,
+form ul.agreement li a.agree_link2{
+    display: inline-block;
+    /* text-align: right; */
+    cursor: pointer;
+}
+
+form ul.agreement li a.agree_link{
+    margin-left: 390px;
+}
+
+form ul.agreement li a.agree_link2{
+    margin-left: 260px;
+}

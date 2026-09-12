@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>마켓컬리 회원가입</title>
+    <link rel="stylesheet" href="styleCss/kurly_join.css" />
 </head>
 <body>
     <!-- https://www.kurly.com/member/signup?internalUrl=%2Fmain%3Fpid%3Dgoogleads_int%26c%3D21533696829%26af_adset%3D196894472362%26af_keywords%3D%25EC%25BB%25AC%25EB%25A6%25AC%26af_sub1%3D1055%26gad_source%3D1%26gad_campaignid%3D21533696829%26gbraid%3D0AAAAADM2qzJgxgSJexn3ubJ3U5n7KefvO%26gclid%3DEAIaIQobChMIvfnyxIzmlgMVVgx7Bx2VKjVREAAYASAAEgLKb_D_BwE
@@ -15,47 +16,146 @@
     input .약관
     -->
     <h2>회원가입</h2>
-    <p><span>*</span>필수입력사항</p>
-    <hr />
+    <p class="main"><span>*</span>필수입력사항</p>
+    <hr class="main"/>
 
     <form action="#" method="post">
         <ul>
             <!-- 아이디* -->
             <li>
-                <label class for="id">아이디</label>
+                <label class="title" for="user_id">아이디<span>*</span></label>
+                <input type="text" id="user_id" name="user_id" placeholder="아이디를 입력해주세요" />
             </li>
             <!-- 비밀번호* -->
+            <li>
+                <label class="title" for="user_pw">비밀번호<span>*</span></label>
+                <input type="password" id="user_pw" name="user_pw" placeholder="비밀번호를 입력해주세요" />
+            </li>
             <!-- 비밀번호확인* -->
+            <li>
+                <label class="title" for="pw_chk">비밀번호 확인<span>*</span></label>
+                <input type="password" id="pw_chk" placeholder="비밀번호를 한번 더 입력해주세요" />
+            </li>
             <!-- 이름* -->
+            <li>
+                <label class="title" for="user_name">이름</label>
+                <input type="text" id="user_name" name="user_name" placeholder="이름을 입력해주세요" />
+            </li>
             <!-- 이메일* -->
-             <!-- (이메일 입력 메시지) -->
+            <li>
+                <label class="title" for="user_email">이메일<span>*</span></label>
+                <input class="email_input" type="text" id="user_email" name="user_email" placeholder="예: marketkurly"/>
+                <span class="email_at">&commat;</span>
+                <select class="email_select">
+                    <option class="email_select" disabled selected hidden><label>선택하기</label></option>
+                    <option>naver.com</option>
+                    <option>google.com</option> 
+                    <option>hanmail.net</option>
+                    <option>kakao.com</option>
+                    <option>daum.net</option>
+                    <option>hotmail.com</option>
+                    <option>yahoo.co.kr</option>
+                    <option>직접 입력</option>
+                </select>
+            </li>
             <!-- 휴대폰* -->
+            <li>
+                <label class="title" for="user_tel">휴대폰<span>*</span></label>
+                <input type="tel" id="user_tel" name="user_tel" placeholder="숫자만 입력해 주세요" />
+                <button class="tel_btn" type="button">인증번호 받기</button>
+            </li>
             <!-- 주소* -->
+            <li>
+                <label class="title"  for="user_address">주소<span>*</span></label>
+                <a href="#" target="_blank">
+                    <button class="address_btn" id="user_address" type="button"><img class="address_btn_img" src="images/i-search.svg">주소 검색</button>
+                </a>
+                <p class="address_info">배송지에 따라 상품 정보가 달라질 수 있습니다.</p>
+            </li>
             <!-- 성별 -->
+            <li>
+                <label class="title" for="user_gender">성별</label>
+                <input type="radio" id="male" name="user_gender" />
+                <label class="radio_option" for="male">남자</label>
+                <input type="radio" id="female" name="user_gender" />
+                <label class="radio_option" for="female">여자</label>
+                <input type="radio" id="user_gender" name="user_gender" checked />
+                <label class="radio_option" for="user_gender">선택안함</label>
+            </li>
             <!-- 생년월일 -->
+            <li>
+                <label class="title" for="user_birth">생년월일</label>
+                <input class="birth_input" type="tel" name="user_birth" placeholder="YYYY" />
+                <span class="birth_input">/</span>
+                <input class="birth_input" type="tel" name="user_birth" placeholder="MM" />
+                <span class="birth_input">/</span>
+                <input class="birth_input" type="tel" name="user_birth" placeholder="DD" />
+            </li>
             <!-- 추가입력 사항 -->
-             
+             <li>
+                <label class="title">추가입력 사항</label>
+                <input type="radio" id=is_recomender />
+                <label class="radio_option" for="is_recomender">친구초대 추천인 아이디</label>
+             </li>
         </ul>
 
         <hr />
 
         <p>이용약관동의<span>*</span></p>
-        <ul>
+        <ul class="agreement">
             <!-- 전체 동의합니다 -->
             <!-- 선택 항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용 할 수 있습니다 -->
+            <li>
+                <div>
+                    <input type="radio" id="all_agree" name="is_all_agree" />
+                    <label class="agreement radio_option" for="all_agree">전체 동의합니다</label>
+                    <p>선택 항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용 할 수 있습니다</p>
+                </div>
+            </li>
             <!-- css 로 선긋기 -->
             <!-- 컬리 이용약관 동의(필수) -->
+            <li class="agree_detail_start">
+                <input type="checkbox" id="terms_agree" name="is_terms_agree" />
+                <label class="agreement radio_option" for="terms_agree">컬리 이용약관 동의<span class="requir">(필수)</span></label>
+                <a class="agree_link" herf="#" target="_blank">&gt;</a>
+            </li>
             <!-- 개인정보 수집∙이용(필수) -->
+            <li>
+                <input type="checkbox" id="personal_agree" name="is_personal_agree" />
+                <label class="agreement radio_option" for="personal_agree">개인정보 수집∙이용<span class="requir">(필수)</span></label>
+                <a class="agree_link" herf="#" target="_blank">&gt;</a>
+            </li>
             <!-- 이벤트 및 혜택정보 발송을 위한 수집∙이용(선택) -->
+            <li>
+                <input type="checkbox" id="event_info_agree" name="is_event_info_agree" />
+                <label class="agreement radio_option" for="event_info_agree">이벤트 및 혜택정보 발송을 위한 수집∙이용<span class="requir">(선택)</span></label>
+                <!-- <a class="agree_link" herf="#" target="blank">&gt;</a> -->
+                <a class="agree_link2" herf="#" target="_blank">&gt;</a>
+            </li>
             <!-- 광고성 정보 수신(선택) -->
+            <li>
+                <input type="checkbox" id="ad_agree" name="is_ad_agree" />
+                <label class="agreement radio_option" for="ad_agree">광고성 정보 수신<span class="requir">(선택)</span></label>
+            </li>
+            <li class="detail_ad_agree">
                 <!-- 문자 -->
+                <input type="checkbox" id="masage_agree" name="is_masage_agree" />
+                <label class="agreement radio_option" for="masage_agree">문자</label>
                 <!-- 이메일 -->
+                <input type="checkbox" id="email_agree" name="is_email_agree" />
+                <label class="agreement radio_option" for="email_agree">이메일</label>
                 <!-- 카카오 -->
+                <input type="checkbox" id="kakaotalk_agree" name="is_kakaotalk_agree" />
+                <label class="agreement radio_option" for="kakaotalk_agree">카카오</label>
+            </li>
             <!-- 본인은 만 14세 이상입니다.(필수) -->
+            <li class="agree_detail_end">
+                <input type="checkbox" id="event_info_agree" name="is_event_info_agree" />
+                <label class="agreement radio_option" for="event_info_agree">본인은 만 14세 이상입니다.<span class="requir">(필수)</span></label>
+            </li>
         </ul>
         <!-- css 로 선긋기 -->
-        <button>가입하기</button>
-
+        <button type="submit">가입하기</button>
     </form>
 </body>
 </html>
