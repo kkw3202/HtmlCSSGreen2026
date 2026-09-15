@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서식</title>
+    <style>
+        /* 
+            1.px 는 고정된 단위 (반응형/접근성에 불리)
+            2.em 은 부모 기준의 상대 단위. (CSS가 들어간 태그의 바로 부모인 태그기준)
+            3.rme 은 최상위(html) 기준 상대단위 ... 현대 반응형 웹 표준 단위
+        */
+        html{
+            font-size: 15px;
+        }
+        body{
+            /* 기본 폰트 사이즈 :16px */
+            font-size: 12px;
+            font-family: sans-serif;
+            /* 줄간의 간격 15px */
+            /* line-height를 24px 와 같이 고정하면, font-size를 변경해도 줄 간격이 고정되버리는 문제가 발생.
+                글자 크기가 변경됨에 따라 맞추어 줄 간격도 변경되게 하려면 rem이나, em을 사용하는것이 좋다.
+            */
+            line-height: 2em;
+            color: #333;
+        }
+        h3{
+            font-size: 1.5rem; /* 16*1.5 = 24px */
+            font-weight: 700;
+            color: #111;
+            text-decoration: overline underline;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+        a{
+            /* a태그의 하이퍼링크 스타일(밑줄) 삭제 */
+            text-decoration: none;
+        }
+        p.text{
+            /* 기울임 꼴 */
+            font-style: italic;
+            /* 페이지 사이즈에 따른 자동 줄 바꿈  normal- 함, nowarp- 안함*/
+            /* white-space 의 기본값은 normal */
+            white-space: nowrap;
+            /* 자동 줄바꿈이 되지않은 상태에서 택스트가 넘친경우 그것을 감추는 CSS */
+            overflow: hidden;
+            /* 넘친 부분을... 으로 표시해주는 CSS */
+            /* clip 기본값 - 표현 없음 */
+            /* ellipsis - ...  */
+            text-overflow: ellipsis;
+
+            /* white-space 가 없으면 overflow가, overflow 가 없으면 text-overflow 가 작동하지 않음 */
+        }
+        p.copy{
+            /* 영어 **단어별** 첫 문자를 대문자로 */
+            text-transform: capitalize;
+            /* 알파벳+숫자의 글자 간격 조정 */
+            letter-spacing: 5px;
+            /* 알파벳+숫자의 단어 간격 조정 */
+            word-spacing: 30px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS 서식 관련 속성</h3>
+    <a href="">네이버</a>
+    <p class="text">
+        든 창공에 너의 쓸쓸한 이것이다. 자고 가는 속에 기쁘며, 칼이다.
+        트고, 보는 들어 만물은 있다. 찾아다녀도, 따뜻한 품고 그것은 무엇이 그들의
+        굳세계 아니더면, 뜨고, 뿐이다. 작고 구할 붙잡아 쓸쓸하랴? 것은 불러 얼마나 위하여
+        석가는 있으랴?
+    </p>
+    <p class="copy">copyright all reserved by hangul 2026</p>
+</body>
+</html>

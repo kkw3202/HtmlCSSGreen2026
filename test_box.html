@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 모델</title>
+    <style>
+        body{
+            /* display:flex는 반드시 부모에 지정해서 사용한다. */
+            /* display: flex;
+            justify-self: center; */
+        }
+
+        .box_group{
+            width: 950px;
+            height: 500px;
+            background-color: white;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+        /* 공통 CSS */
+        .box_group div{
+            width: 200px;
+            height: 200px;
+            background-color: dodgerblue;
+            border: 2px solid orange;
+            margin: 10px;
+            text-align: center;
+            color: white;
+            /* height 가 200 일 때, line-height 도 같은 값인 200을 주면 글자가 가운데로 옴.*/
+            line-height: 200px;
+            /* div를 가로로 배치 float - 요즘은 잘 안씀*/
+            /* 요즘 사용하는 방식 display: flex;*/
+            /* 사용 시 margin: 0 auto 사용 안됨 */
+            /* float: left;  */
+            /* 혹은 블록인 div를 inline-block으로 바꿔준다. */
+            display: inline-block;
+            
+            
+        }
+        /* 개별 CSS */
+        .box1{
+            border-radius: 20px;
+        }
+        .box2{
+            border-radius: 50px;
+        }
+        .box3{
+            border-radius: 50%;
+        }
+        .box4{
+            border-radius: 50px 0 50px 0;
+        }
+        .box5{
+            border-radius: 100% 0 0 0;
+        }
+        .box6{
+            border-radius: 100% 100% 100% 0;
+        }
+        .box7{
+            border-radius: 100% 0 100% 0;
+        }
+        .box8{
+            border-radius: 50% 50% 0 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- div : 블록태그. 높이, 넓이, 크기를 가짐. -->
+    <!-- 그래서 새로로 출력되고, 가로로 출력되지 않는다. -->
+    <div class="box_group">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+        <div class="box5">box5</div>
+        <div class="box6">box6</div>
+        <div class="box7">box7</div>
+        <div class="box8">box8</div>
+    </div>
+</body>
+</html>

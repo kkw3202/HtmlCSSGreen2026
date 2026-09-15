@@ -47,6 +47,7 @@
                 <input class="email_input" type="text" id="user_email" name="user_email" placeholder="예: marketkurly"/>
                 <span class="email_at">&commat;</span>
                 <select class="email_select">
+                    <!-- hidden은 전번에 타 사이트에서 검사눌러서 구경하다 본게 기억나서 사용해봤습니다. -->
                     <option class="email_select" disabled selected hidden><label>선택하기</label></option>
                     <option>naver.com</option>
                     <option>google.com</option> 
@@ -67,9 +68,9 @@
             <!-- 주소* -->
             <li>
                 <label class="title"  for="user_address">주소<span>*</span></label>
-                <a href="#" target="_blank">
-                    <button class="address_btn" id="user_address" type="button"><img class="address_btn_img" src="images/i-search.svg">주소 검색</button>
-                </a>
+                    <button class="address_btn" id="user_address" type="button">
+                        <img class="address_btn_img" src="images/i-search.svg" alt="주소 검색">주소 검색
+                    </button>
                 <p class="address_info">배송지에 따라 상품 정보가 달라질 수 있습니다.</p>
             </li>
             <!-- 성별 -->
@@ -107,9 +108,9 @@
             <!-- 선택 항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용 할 수 있습니다 -->
             <li>
                 <div>
-                    <input type="radio" id="all_agree" name="is_all_agree" />
+                    <input type="checkbox" id="all_agree" name="is_all_agree" />
                     <label class="agreement radio_option" for="all_agree">전체 동의합니다</label>
-                    <p>선택 항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용 할 수 있습니다</p>
+                    <p class="all_agree_info">선택 항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용 할 수 있습니다</p>
                 </div>
             </li>
             <!-- css 로 선긋기 -->
@@ -117,20 +118,24 @@
             <li class="agree_detail_start">
                 <input type="checkbox" id="terms_agree" name="is_terms_agree" />
                 <label class="agreement radio_option" for="terms_agree">컬리 이용약관 동의<span class="requir">(필수)</span></label>
-                <a class="agree_link" herf="#" target="_blank">&gt;</a>
+                <a class="agree_link" href="#" target="_blank" id="agreement_link1">&gt;</a>
+                <label for="agreement_link1" hidden>약관보기</label>
             </li>
             <!-- 개인정보 수집∙이용(필수) -->
             <li>
                 <input type="checkbox" id="personal_agree" name="is_personal_agree" />
                 <label class="agreement radio_option" for="personal_agree">개인정보 수집∙이용<span class="requir">(필수)</span></label>
-                <a class="agree_link" herf="#" target="_blank">&gt;</a>
+                <a class="agree_link" href="#" target="_blank" id="agreement_link2">&gt;</a>
+                <label for="agreement_link2" hidden>약관보기</label>
             </li>
             <!-- 이벤트 및 혜택정보 발송을 위한 수집∙이용(선택) -->
             <li>
                 <input type="checkbox" id="event_info_agree" name="is_event_info_agree" />
                 <label class="agreement radio_option" for="event_info_agree">이벤트 및 혜택정보 발송을 위한 수집∙이용<span class="requir">(선택)</span></label>
                 <!-- <a class="agree_link" herf="#" target="blank">&gt;</a> -->
-                <a class="agree_link2" herf="#" target="_blank">&gt;</a>
+                <a class="agree_link2" href="#" id="agreement_link3">&gt;</a>
+                <label for="agreement_link3" hidden>약관보기</label>
+
             </li>
             <!-- 광고성 정보 수신(선택) -->
             <li>
@@ -150,8 +155,8 @@
             </li>
             <!-- 본인은 만 14세 이상입니다.(필수) -->
             <li class="agree_detail_end">
-                <input type="checkbox" id="event_info_agree" name="is_event_info_agree" />
-                <label class="agreement radio_option" for="event_info_agree">본인은 만 14세 이상입니다.<span class="requir">(필수)</span></label>
+                <input type="checkbox" id="14_agree" name="is_14_agree" />
+                <label class="agreement radio_option" for="14_agree">본인은 만 14세 이상입니다.<span class="requir">(필수)</span></label>
             </li>
         </ul>
         <!-- css 로 선긋기 -->

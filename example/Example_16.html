@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제16</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        div.plan_wrap{
+            text-align: center;
+            background-color: #eee;
+            padding: 50px;
+        }
+        div.plan{
+            display: inline-block;
+            background-color: #fff;
+            color:#1E2A4A;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            width: 300px;
+            height: 350px;
+            text-align: center;
+            padding: 20px 0;
+            border-radius: 10px;
+            margin: 0 10px;
+        }
+        div.Standard{
+            background-color: #1E2A4A;
+            color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.9);
+        }
+
+        h2{
+            margin: 20px;
+        }
+
+        hr{
+            display: inline-block;
+            width: 250px;
+            text-align: center;
+            color: #333;
+        }
+        p{
+            margin-bottom: 25px;
+        }
+
+        p span{
+            font-size: 2rem;
+        }
+
+        ul li{
+            margin: 10px 0;
+        }
+
+        ul li.features{
+            text-align: left;
+            margin-left: 50px;
+        }
+
+        div div button[type="button"]{
+            border: 1px solid #fff;
+            border-radius: 25%;
+            width: 250px;
+            height: 40px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="plan_wrap">
+        <div class="plan">
+            <h2>Basic</h2>
+            <p class="price"><span>$9</span>/ month</p>
+            <hr />
+            <ul>
+                <li class="features">5 projects</li>
+                <li class="features">1GB storage</li>
+                <li class="features">email support</li>
+            </ul>
+            <button type="button">Choose Plane</button>
+        </div>
+        
+        <div class="plan Standard">
+            <h2>Standard</h2>
+            <p class="price"><span>$19</span>/ month</p>
+            <hr />
+            <ul>
+                <li class="features">20 projects</li>
+                <li class="features">10GB storage</li>
+                <li class="features">Priority support</li>
+            </ul>
+            <button type="button">Choose Plane</button>
+        </div>
+
+        <div class="plan">
+            <h2>Premium</h2>
+            <p class="price"><span>$39</span>/ month</p>
+            <hr />
+            <ul>
+                <li class="features">unlimited project</li>
+                <li class="features">100GB storage</li>
+                <li class="features">24/7 phone surpport</li>
+            </ul>
+            <button type="button">Choose Plane</button>
+        </div>
+    </div>
+    
+</body>
+</html>

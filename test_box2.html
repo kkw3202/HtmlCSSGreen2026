@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 모델2</title>
+    <style>
+      .box{
+        /* 기본 width 사이즈가 600px 이지만 padding 과 border의 좌우 여백값이 더해져 660px의 공간을 차지 
+            만약, 배치하고 싶은 컨텐츠가 더 존재한다면 너비사이즈가 맞지 않아서 원하는대로 배치가 되지않는다.
+                이런 경우에, 원래 지정한 600px로 크기를 지정하려면
+                box-sizing : border-box 를 지정해야한다.
+        */
+        width: 600px;
+        height: 50px;
+        padding: 20px;
+        border: 10px solid red;
+        line-height: 50px;
+        font-size: 30px;
+        /* margin은 상 우 하 좌 순서로 들어감 */
+        margin: 0 auto 10px auto;
+        text-align: center;
+      }.box2{
+        width: 600px;
+        /* height: 50px; */
+        padding: 20px;
+        border: 10px solid red;
+        line-height: 50px;
+        font-size: 30px;
+        box-sizing:border-box;
+        text-align: center;
+        margin: 0 auto;
+      }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Calculating the actual contest size
+    </div>
+    <div class="box2">
+        Calculating the actual contest size
+    </div>
+</body>
+</html>
