@@ -26,11 +26,14 @@
             padding: 20px 0;
             border-radius: 10px;
             margin: 0 10px;
+            vertical-align: middle;
         }
         div.Standard{
             background-color: #1E2A4A;
             color: #fff;
             box-shadow: 0 0 10px rgba(0,0,0,0.9);
+            width: 330px;
+            height: 370px;
         }
 
         h2{
@@ -39,9 +42,9 @@
 
         hr{
             display: inline-block;
-            width: 250px;
+            width: 300px;
             text-align: center;
-            color: #333;
+            border: 1px solid #eeeeee4f;
         }
         p{
             margin-bottom: 25px;
@@ -61,12 +64,40 @@
         }
 
         div div button[type="button"]{
-            border: 1px solid #fff;
-            border-radius: 25%;
+            border: 1px solid #1E2A4A;
+            background-color: #1E2A4A;
+            color: #fff;
+            border-radius: 45%;
             width: 250px;
             height: 40px;
-            margin-top: 20px;
+            margin-top: 25px;
+            font-weight: bold;
         }
+
+        div div button[type="button"]:hover{
+            border: 1px solid #0e1830;
+            background-color: #0e1830;
+            color: #f8f5df;
+        }
+
+        div div button[type="button"].Standard{
+            border: 1px solid #fff;
+            background-color: #fff;
+            color: #1E2A4A;
+            border-radius: 45%;
+            width: 270px;
+            height: 50px;
+            margin-top: 40px;
+            font-size: 17px;
+        }
+
+        div div button[type="button"].Standard:hover{
+            border: 1px solid #bbbbbb;
+            background-color: #bbbbbb;
+            color: #1E2A4A;
+        }
+
+
     </style>
 </head>
 <body>
@@ -92,7 +123,7 @@
                 <li class="features">10GB storage</li>
                 <li class="features">Priority support</li>
             </ul>
-            <button type="button">Choose Plane</button>
+            <button type="button" class="Standard">Choose Plane</button>
         </div>
 
         <div class="plan">
