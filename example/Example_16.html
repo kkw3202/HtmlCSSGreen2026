@@ -10,94 +10,140 @@
             padding: 0;
         }
 
+        body{
+            font-family: sans-serif;
+        }
+
         div.plan_wrap{
             text-align: center;
             background-color: #eee;
             padding: 50px;
         }
         div.plan{
+            /* div가 block태그여서 가로정렬이 안되기 때문에 display: inline-block을 사용한다. */
             display: inline-block;
             background-color: #fff;
             color:#1E2A4A;
+            /* box-shadow: 0 40px 10px rgba(0,0,0,0.15); */
             box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
             width: 300px;
             height: 350px;
             text-align: center;
             padding: 20px 0;
+            /* padding: 30px 20px; */
             border-radius: 10px;
             margin: 0 10px;
             vertical-align: middle;
         }
+
         div.Standard{
             background-color: #1E2A4A;
             color: #fff;
+            /* box-shadow: 0 10px 25px rgba(0,0,0,0.4); */
             box-shadow: 0 0 10px rgba(0,0,0,0.9);
             width: 330px;
             height: 370px;
         }
 
-        h2{
+        div.plan h2{
             margin: 20px;
+            color: #333;
+        }
+
+        div.Standard h2{
+            color: #fff;
         }
 
         hr{
             display: inline-block;
-            width: 300px;
+            width: 270px;
             text-align: center;
-            border: 1px solid #eeeeee4f;
+            /* none 한 후 top 나 bottom으로 새로 만들어줘야 원하는대로 나옴 */
+            border: none;
+            border-top: 1px solid #ddd;
         }
+
         p{
-            margin-bottom: 25px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            color: #666;
         }
 
         p span{
             font-size: 2rem;
+            color: #1E2A4A;
+            font-weight: bold;
+        }
+
+        div.Standard p span{
+            color: #fff;
+        }
+
+        div ul{
+            text-align: left;
+            list-style: none;
         }
 
         ul li{
             margin: 10px 0;
+            margin-left: 50px;
+            /*  */
         }
 
-        ul li.features{
-            text-align: left;
-            margin-left: 50px;
+        div.Standard ul li{
+            font-size: 17px;
+            margin-top: 15px;
         }
 
         div div button[type="button"]{
-            border: 1px solid #1E2A4A;
+            border: none;
             background-color: #1E2A4A;
             color: #fff;
-            border-radius: 45%;
-            width: 250px;
+            border-radius: 20px;
+            width: 80%;
             height: 40px;
             margin-top: 25px;
             font-weight: bold;
         }
 
         div div button[type="button"]:hover{
-            border: 1px solid #0e1830;
-            background-color: #0e1830;
+            border: none;
+            background-color: #3b4d7a;
             color: #f8f5df;
         }
 
         div div button[type="button"].Standard{
-            border: 1px solid #fff;
+            border: none;
             background-color: #fff;
             color: #1E2A4A;
-            border-radius: 45%;
-            width: 270px;
+            border-radius: 25px;
+            width: 80%;
             height: 50px;
-            margin-top: 40px;
+            margin-top: 20px;
             font-size: 17px;
         }
 
         div div button[type="button"].Standard:hover{
-            border: 1px solid #bbbbbb;
-            background-color: #bbbbbb;
+            border: none;
+            background-color: #dddddd;
             color: #1E2A4A;
         }
 
-
+        /* 가상요소 선택자
+            가상요소는... ::before, ::after의 요소가 존재한다.
+            실제로는 존재하지않는 가상의 요소를 HTML 앞, 또는 뒤에 삽입해주는 선택자이다.
+            단, 가상요소 선택자는 반드시 내용(content)가 존재해야한다.
+            content : '가상문자'
+                가상문자는 아이콘, 기호, 텍스트, 이모지콘, 특수문자, 유니코드.. 모두 가능
+                    이모지콘 : 윈도우키 + . ✔️ 
+                    특수문자 : ㄷ + 한자키 √
+                    유니코드 : \2713 √
+        */
+        ul li::before{
+            content: '\2713  ';
+            color: #2ecc71;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -107,9 +153,9 @@
             <p class="price"><span>$9</span>/ month</p>
             <hr />
             <ul>
-                <li class="features">5 projects</li>
-                <li class="features">1GB storage</li>
-                <li class="features">email support</li>
+                <li>5 projects</li>
+                <li>1GB storage</li>
+                <li>email support</li>
             </ul>
             <button type="button">Choose Plane</button>
         </div>
@@ -119,9 +165,9 @@
             <p class="price"><span>$19</span>/ month</p>
             <hr />
             <ul>
-                <li class="features">20 projects</li>
-                <li class="features">10GB storage</li>
-                <li class="features">Priority support</li>
+                <li>20 projects</li>
+                <li>10GB storage</li>
+                <li>Priority support</li>
             </ul>
             <button type="button" class="Standard">Choose Plane</button>
         </div>
@@ -131,9 +177,9 @@
             <p class="price"><span>$39</span>/ month</p>
             <hr />
             <ul>
-                <li class="features">unlimited project</li>
-                <li class="features">100GB storage</li>
-                <li class="features">24/7 phone surpport</li>
+                <li>unlimited project</li>
+                <li>100GB storage</li>
+                <li>24/7 phone surpport</li>
             </ul>
             <button type="button">Choose Plane</button>
         </div>

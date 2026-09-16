@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인 & 블록</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            font-size: 19px;
+            color: red;
+        }
+        div{
+            border: 1px solid red;
+            height: 50px;
+        }
+        a{
+            text-decoration: none;
+            cursor: default;
+            /* a태그의 문자색은 반드시 a태그에 주어야 바뀜! */
+            color:rgb(47, 187, 187);
+            /* a태그는 인라인 요소로 너비가 없다. 즉, 가지고 싶다면 인라인-블록이나 블록으로 변경해야함. */
+            display: inline-block;
+            width: 100px;
+            border: 1px solid blue;
+            text-align: center;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://naver.com" target="_blank">네이버</a>
+    <a href="https://google.com" target="_blank">구글</a>
+    <a href="https://daum.net" target="_blank">다음</a>
+    
+    <hr />
+    <div>box1</div>
+    <div>box2</div>
+    <div>box3</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 전체 */
+header.site_header{
+    border-bottom: 1px solid #c9c9c9;
+    overflow: hidden;
+    width:1400px;
+    margin: 0 auto;
+}
+
+/* 로고 */
+.logo h1{
+    float: left;
+    color: #1f5c3f;
+    margin: 20px;
+    margin-left: 50px;
+}
+
+/* 매뉴 전체 */
+nav{
+    float: left;
+}
+
+nav ul{
+    list-style: none;
+    clear: both;
+    margin-top: 12px;
+    margin-left: 50px;
+}
+
+/* 각 매뉴 */
+nav ul li{
+    display: inline-block;
+    margin: 20px;
+    color: #666;
+}
+
+/* 유틸 전체 */
+.util{
+    float: right;
+    margin: 20px;
+}
+
+/* 점주님 공간, 프랜차이즈 버튼 공동 */
+span.owner,
+button.franchise_btn{
+    margin: 0 10px;
+    margin-top: 5px;
+}
+
+span.owner{
+    color: #666;
+}
+
+/* 프랜차이즈 버튼 */
+button.franchise_btn{
+    background-color: #1f5c3f;
+    border-radius: 5px;
+    color: white;
+    width:120px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}

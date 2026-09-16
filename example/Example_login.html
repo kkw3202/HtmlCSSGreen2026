@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 로그인</title>
+    <link rel="stylesheet" href="/styleCss/style_login.css">
+</head>
+<body>
+    <div class="login-wrap">
+        <h1>NAVER</h1>
+        <div class="login-box">
+            <input type="text" placeholder="아이디 또는 전화번호"/>
+            <input type="password" placeholder="비밀번호"/>
+            <div class="keep_login">
+                <input type="checkbox" id="keep_login" name="is_keep_login" />
+                <label for="keep_login">로그인 상태 유지</label>
+                <p>IP 보안</p>
+            </div>
+            <div class="button_wrap">
+                <button class="passkey" type="button">패스키 로그인</button>
+                <button class="login" type="submit">로그인</button>
+            </div>
+            <div class="etc">
+                <a href="#" class="qr_login" target="_blank">QR 코드 로그인</a>
+                <a href="#" class="onetime_login" target="_blank">일회용 번호 로그인</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

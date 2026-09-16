@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 가로배치하기</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            border: 3px solid blue;
+            width: 606px;
+            margin: 300px auto;
+        }
+
+        .top{
+            background-color: blueviolet;
+            height: 50px;
+        }
+        .left{
+            background-color: skyblue;
+            height: 50px;
+            width: 300px;
+            float: left;
+        }
+        .right{
+            background-color: brown;
+            height: 50px;
+            width: 300px;
+            float: right;
+        }
+
+        .clear{
+            /* 클리어는 float 을 사용한 적이 없지만, 위의 태그에 float을 지정 한 경우 자동으로 상속받게된다.
+                이를 claer: both' 로 해제받아야 해당 속성을 잃는다. */
+            background-color: dodgerblue;
+            height: 50px;
+            clear: both;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="top">float:none</div>
+        <div class="left">float:left</div>
+        <div class="right">float:right</div>
+        <div class="clear">float:clear</div>
+    </div>
+</body>
+</html>
