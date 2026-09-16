@@ -8,7 +8,7 @@
 div.profile-header{
     overflow: hidden;
     width: 450px;
-    margin: 20px auto;
+    margin: 20rem auto;
 }
 
 /* 이미지 */
@@ -29,7 +29,7 @@ div.profile-header div.profile-img{
 div.profile-header div.profile-info{
     float: left;
     margin-left: 40px;
-    width: 260px;
+    width: 57%;
     height: 165px;
 }
 /* 인포 각 묶음별 설정 */
@@ -72,8 +72,9 @@ div.profile-header div.profile-info ul li{
     width: 30%;
 }
 /* 상기 각 항목별 수치 */
-div.profile-header div.profile-info ul li p{
+div.profile-header div.profile-info ul li a span{
     font-weight:bold ;
+    display: block;
 }
 /* 상기 각 항목별 타이틀 */
 div.profile-header div.profile-info ul li a{
