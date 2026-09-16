@@ -17,11 +17,12 @@ div.profile-header div.profile-img{
     height: 150px;
     border-radius: 50%;
     float: left;
-    background-color: gray;
+    background-color: #E0E0E0;
     text-align: center;
     line-height: 150px;
     font-size: 28px;
     font-weight: bold;
+    color: #818B99;
 }
 
 /* 인포 전체 */
@@ -53,12 +54,16 @@ div.profile-header div.profile-info .info_1st button{
     background-color: #0095F6;
     border: none;
     border-radius: 5px;
-    width: 38%;
-    height: 65%;
+    width: 36%;
+    height: 69%;
     font-weight: bold;
     color: #fff;
     margin-left: 10%;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+}
+
+div.profile-header div.profile-info .info_1st button:hover{
+    background-color: #0077c7;
 }
 
 /* 게시물, 팔로워, 팔로잉 */
@@ -74,8 +79,10 @@ div.profile-header div.profile-info ul li p{
 div.profile-header div.profile-info ul li a{
     color: #111;
     text-decoration: none;
+    font-weight: 400;
 }
 
 div.info_3rd{
     margin-top: 3%;
+    font-weight: 350;
 }
