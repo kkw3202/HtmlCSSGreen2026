@@ -1,0 +1,81 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 헤더 전체 */
+div.profile-header{
+    overflow: hidden;
+    width: 450px;
+    margin: 20px auto;
+}
+
+/* 이미지 */
+div.profile-header div.profile-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    float: left;
+    background-color: gray;
+    text-align: center;
+    line-height: 150px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* 인포 전체 */
+div.profile-header div.profile-info{
+    float: left;
+    margin-left: 40px;
+    width: 260px;
+    height: 165px;
+}
+/* 인포 각 묶음별 설정 */
+div.profile-header div.profile-info .info_1st,
+div.profile-header div.profile-info .info_2nd,
+div.profile-header div.profile-info .info_3rd{
+    height: 33%;
+}
+
+/* 아이디 및 팔로우 버튼 */
+div.profile-header div.profile-info .info_1st h2,
+div.profile-header div.profile-info .info_1st button{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+div.profile-header div.profile-info .info_1st h2{
+    width: 50%;
+}
+/* 팔로우 버튼 */
+div.profile-header div.profile-info .info_1st button{
+    background-color: #0095F6;
+    border: none;
+    border-radius: 5px;
+    width: 38%;
+    height: 65%;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 10%;
+    font-size: 1.1rem;
+}
+
+/* 게시물, 팔로워, 팔로잉 */
+div.profile-header div.profile-info ul li{
+    display: inline-block;
+    width: 30%;
+}
+/* 상기 각 항목별 수치 */
+div.profile-header div.profile-info ul li p{
+    font-weight:bold ;
+}
+/* 상기 각 항목별 타이틀 */
+div.profile-header div.profile-info ul li a{
+    color: #111;
+    text-decoration: none;
+}
+
+div.info_3rd{
+    margin-top: 3%;
+}
