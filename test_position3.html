@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보이고 감추기</title>
+    <style>
+        .parent div{
+            width: 200px;
+            height: 300px;
+            float: left;
+            margin: 10px;
+        }
+        .child1{
+            background-color: dodgerblue;
+            /* display: none; */
+        }
+        .child2{
+            background-color: gold;
+            /* visibility: hidden; */
+        }
+        .child3{
+            background-color: lightgray;
+            opacity: 0.5;
+        }
+
+        hr{
+            clear: both;
+        }
+        .parent2{
+            position: relative;
+            margin: 0 auto;
+        }
+        .parent2 div{   
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+
+        .child4{
+            background-color: skyblue;
+            margin: 10px;
+        }
+        .child5{
+            background-color: blueviolet;
+            margin: 20px;
+            z-index: 100;
+        }
+        .child6{
+            background-color: brown;
+            margin: 30px;
+            z-index:20;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    요소 보이거나 감추는 속성
+     1. display : none => 공간, 크기, 실체 모두 사라짐.
+     2. (불투명도) opacity : 0 => 공간, 크기, 실체 모두 유지. 단, 눈에 보이지 않음
+     3. visibility : hidden => 공간, 크기 유지. 실체 사라짐.
+    -->
+    <div class="parent">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+    </div>
+    <hr/>
+    <!-- z-index : 반드시 포지션과 함께 사용해, 어느 모달을 앞으로 가져올지정함. 숫자의 상댓값이 높을수록 앞으로 올라옴.
+                    단, 숫자를 순차로 쓸 필요도 없고, 음수를 줄 수 도 있다. 
+    -->
+    <div class="parent2">
+        <div class="child4"></div>
+        <div class="child5"></div>
+        <div class="child6"></div>
+    </div>
+</body>
+</html>

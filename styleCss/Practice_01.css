@@ -1,0 +1,99 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.product_wrap{
+    width: 550px;
+    margin: 100px auto;
+    overflow: hidden;
+}
+
+/* 상품 묶음 */
+.product_wrap .products .product{
+    margin-top: 5%;
+    list-style: none;
+}
+
+/* 상품 전체 (링크) */
+.product_wrap .products .product a{
+    display: block;
+    width: 100%;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+}
+
+/* 이미지 */
+.product_wrap .products .product img{
+    width: 22%;
+    border-radius: 10px;
+    margin-right: 3%;
+}
+
+/* 상품 정보 묶음 */
+.product_wrap .products .product .info{
+    width: 74%;
+    display: inline-block;
+    font-size: 1.5rem;
+    vertical-align: top;
+}
+
+/* 상품 각 정보 (이름, 가격, 리뷰) */
+.product_wrap .products .product .info p{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+/* 상품 명 */
+.product_wrap .products .product .info .name{
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 상품 가격 전체 */
+.product_wrap .products .product .info .price{
+    word-spacing: 1rem;
+    margin-top: 0.3em;
+}
+/* 원가격 */
+.product_wrap .products .product .info .price del{
+    font-size: 0.85em;
+    color: #8a8a8a;
+}
+/* 할인율 */
+
+.product_wrap .products .product .info .price span{
+    font-weight: bold;
+    color: rgb(206, 33, 33);
+}
+
+/* 리뷰 */
+.product_wrap .products .product .info .review{
+    color: #8a8a8a;
+    font-size: 0.8em;
+}
+
+/* 세일시간 && 맴버십여부 */
+.saletime,
+.members{
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+    border-radius: 10px 0 10px 0;
+    font-weight: 550;
+    padding: 5px;
+}
+/* 세일시간 || 맴버십여부 */
+.saletime{
+    background-color: crimson;
+
+}
+.members{
+    background-color: blueviolet;
+}

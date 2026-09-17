@@ -1,0 +1,237 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+/* 상품 목록 창 전체 */
+.product_wrap{
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* 상단 정렬방식 및 총 건수 */
+.product_wrap_info{
+    width: 70%;
+    float: right;
+    margin-bottom: 2rem;
+}
+
+    /* 총 건수 */
+.product_wrap_info p{
+    float: left;
+    font-weight: 500;
+}
+    /* 정렬 방식 */
+.how_asc_product{
+    float: right;
+}
+
+.how_asc_product a{
+    color: #A1A1A1;
+    text-decoration: none;
+    display: inline-block;
+    height: 0.2em;
+    font-size: 1.1em;
+}
+
+#asc_recommended::after,
+#asc_new::after,
+#asc_sell::after,
+#asc_boon::after,
+#asc_price_high::after{
+    content: " | ";
+    margin: 0 0.1em;
+}
+
+/* 상품 3개 1줄 */
+.product_col{
+    width: 70%;
+    float: right;
+}
+
+/* 각 상품 li 담을 ul */
+.product_row{
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+/* 각 상품 */
+.product{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    position: relative;
+}
+
+/* 상품 이미지 간 간격 조절용 중간 상품 */
+.mid{
+    margin: 0 4.3%;
+}
+
+/* 각 상품 사진 */
+.product_img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* 카트 담기 버튼 */
+.product_toCart{
+    width: 100%;
+    border: 1px solid #A1A1A1;
+    border-radius: 5px;
+    font-size: 1.3em;
+    cursor: pointer;
+    padding: 0.2em;
+}
+
+
+.product_toCart img{
+    width: 10%;
+    vertical-align: auto;
+    margin-top: 0.1em;
+}
+
+/* 배송타입 (샛별배송) */
+.del_type{
+    font-size: 0.9em;
+    color: #A7B7C7;
+}
+
+/* 상품 개요 */
+.about_product{
+    margin: 0.2em 0;
+}
+/* 상품 이름 */
+.product_name{
+    font-size: 1.1em;
+    font-weight: 550;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 상품 설명 */
+.product_info{
+    font-size: 0.85em;
+    color: #A7B7C7;
+}
+
+/* 상품 가격 */
+.price{
+
+}
+
+/* 원래 가격 */
+.price del{
+    display: block;
+    color: #bbacaa;
+}
+/* 할인율 , 최종가격 공통*/
+.price span,
+.price strong{
+    font-size: 1.1em;
+    font-weight: 900;
+}
+/* 할인율 */
+.price span{
+    color: #FA623C;
+}
+
+/* 최종가격 */
+.price strong{
+    margin-left: 0.2em;
+}
+
+/* 리뷰 */
+.product_review{
+    color: #A7B7C7;
+}
+
+.product_review::before{
+    content: '🗨️  ';
+}
+
+/* 컬리 온리 */
+.product_only{
+    display: inline-block;
+    background-color: #ECEFF3;
+    padding: 0.3em;
+    font-size: 0.8em;
+    text-transform: capitalize;
+    color: #7920AA;
+    margin-top: 1em;
+}
+
+.pro5 .product_only{
+    display: none;
+}
+
+/* 최저가 도전 */
+.lower_price{
+    position: absolute;
+    top: 35%;
+    left: 0.7em;
+    background-color: #7997BC;
+    color: #ECEFF3;
+    height: 4.2rem;
+    width: 4.2rem;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1rem;
+    font-weight: bold;
+}
+.lower_price span{
+    display: inline-block;
+    padding-top: 0.9em;
+}
+
+/* 할인율*/
+.product_row .pro1::before,
+.product_row .pro2::before,
+.product_row .pro3::before,
+.product_row .pro6::before,
+.product_row .pro7::before,
+.product_row .pro8::before{
+    position: absolute;
+    top: 0.5em;
+    left: 0.7em;
+    background-color: #BD76FF;
+    padding: 0.35em;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+/* 할인율 15% */
+.product_row .pro1::before,
+.product_row .pro2::before,
+.product_row .pro3::before,
+.product_row .pro6::before{
+    content: '최대15%쿠폰';
+}
+
+/* 할인율 10% */
+.product_row .pro7::before,
+.product_row .pro8::before{
+    content: '최대10%쿠폰';
+}
+
+.fillter{
+    border: 1px solid red;
+    width: 28%;
+}
+
+.fillter_tilte,
+.fillter ul{
+    border-bottom: 1px solid #A7B7C7;
+    padding: 1em 0;
+}
+
+.fillter input[type="checkbox"]{
+    visibility: hidden;
+}

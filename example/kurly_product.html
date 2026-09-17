@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kurly_product</title>
+    <link rel="stylesheet" href="/styleCss/kurly_product.css">
+</head>
+<body>
+    <!-- 상품 창 전체 -->
+    <div class="product_wrap">
+        <!-- 상단 정렬방식 및 총 건수 -->
+        <div class="product_wrap_info">
+            <!-- 총 건수 -->
+            <p>총 9,856건</p>
+            <!-- 정렬 방식 -->
+            <div class="how_asc_product 1">
+                <a id="asc_recommended" href="#">추천순</a>
+                <a id="asc_new" href="#">신상품순</a>
+                <a id="asc_sell" href="#">판매량순</a>
+                <a id="asc_boon" href="#">혜택순</a>
+                <a id="asc_price_high" href="#">높은 가격순</a>
+                <a id="asc_price_low" href="#">낮은 가격순</a>
+            </div>
+        </div>
+        <!-- 상품 목록 (1줄 3상품) -->
+        <div class="product_col">
+            <!-- 각 상품 li 담을 ul -->
+            <ul class="product_row">
+                <!-- 각 상품 -->
+                <li class="product pro1">
+                    <!-- 상품 사진 -->
+                    <img class="product_img" src="/images/ku-1.jpg" alt="시그니처 차돌 떡볶이" />
+                    <!-- 카트 담기 버튼 -->
+                    <button class="product_toCart">
+                        <img src="/images/cart.svg" alt="장바구니" />
+                        담기
+                    </button>
+                    <!-- 배송타입 (샛별배송) -->
+                    <p class="del_type">샛별배송</p>
+                    <!-- 상품 개요 -->
+                    <div class="about_product">
+                        <!-- 상품 이름 -->
+                        <p class="product_name">[청년다방] 시그니처 차돌 떡볶이 (2인분)</p>
+                        <!-- 상품 설명 -->
+                        <p class="product_info">매장의 시그니처 메뉴</p>
+                    </div>
+                    <!-- 상품 가격 -->
+                    <div class="price">
+                        <p>
+                            <!-- 원래 가격 -->
+                            <del>14,900원</del>
+                            <!-- 할인율 -->
+                            <span>50%</span>
+                            <!-- 최종가격 -->
+                            <strong>7,450원</strong>
+                        </p>
+                    </div>
+                    <!-- 리뷰 -->
+                    <p class="product_review">442</p>
+                    <!-- 컬리 온리 -->
+                    <p class="product_only">kulry only</p>
+                </li>
+
+                <!-- 각 상품 -->
+                <li class="product mid pro2">
+                    <!-- 상품 사진 -->
+                    <img class="product_img" src="/images/ku-2.jpg" alt="국내산 소고기 육전용" />
+                    <!-- 카트 담기 버튼 -->
+                    <button class="product_toCart">
+                        <img src="/images/cart.svg" alt="장바구니" />
+                        담기
+                    </button>
+                    <!-- 배송타입 (샛별배송) -->
+                    <p class="del_type">샛별배송</p>
+                    <!-- 상품 개요 -->
+                    <div class="about_product">
+                        <!-- 상품 이름 -->
+                        <p class="product_name">[일상味소] 국내산 소고기 육전용 200g (냉동)</p>
+                        <!-- 상품 설명 -->
+                        <p class="product_info">육전에 알맞은 우둔부위</p>
+                    </div>
+                    <!-- 상품 가격 -->
+                    <div class="price">
+                        <p>
+                            <!-- 원래 가격 -->
+                            <del>11,000원</del>
+                            <!-- 할인율 -->
+                            <span>20%</span>
+                            <!-- 최종가격 -->
+                            <strong>8,800원</strong>
+                        </p>
+                    </div>
+                    <!-- 리뷰 -->
+                    <p class="product_review">9,999+</p>
+                    <!-- 컬리 온리 -->
+                    <p class="product_only">kulry only</p>
+                </li>
+
+                <!-- 각 상품 -->
+                <li class="product pro3">
+                    <!-- 상품 사진 -->
+                    <img class="product_img" src="/images/ku-3.jpg" alt="햄가득 송탄식 부대찌개" />
+                    <!-- 카트 담기 버튼 -->
+                    <button class="product_toCart">
+                        <img src="/images/cart.svg" alt="장바구니" />
+                        담기
+                    </button>
+                    <!-- 배송타입 (샛별배송) -->
+                    <p class="del_type">샛별배송</p>
+                    <!-- 상품 개요 -->
+                    <div class="about_product">
+                        <!-- 상품 이름 -->
+                        <p class="product_name">[차려낸] 햄 가득 송탄식 부대찌개</p>
+                        <!-- 상품 설명 -->
+                        <p class="product_info">햄으로 채운 풍성한 냄비</p>
+                    </div>
+                    <!-- 상품 가격 -->
+                    <div class="price">
+                        <p>
+                            <!-- 원래 가격 -->
+                            <del>15,000원</del>
+                            <!-- 할인율 -->
+                            <span>30%</span>
+                            <!-- 최종가격 -->
+                            <strong>11,130원</strong>
+                        </p>
+                    </div>
+                    <!-- 리뷰 -->
+                    <p class="product_review">9,999+</p>
+                    <!-- 컬리 온리 -->
+                    <p class="product_only">kulry only</p>
+                </li>
+            </ul>
+
+            <!-- 각 상품 li 담을 ul -->
+            <ul class="product_row">
+                <!-- 각 상품 -->
+                <li class="product pro4">
+                    <!-- 상품 사진 -->
+                    <img class="product_img" src="/images/ku-4.jpg" alt="한돈 삼겹살 구이용" />
+                    <!-- 카트 담기 버튼 -->
+                    <button class="product_toCart">
+                        <img src="/images/cart.svg" alt="장바구니" />
+                        담기
+                    </button>
+                    <!-- 배송타입 (샛별배송) -->
+                    <p class="del_type">샛별배송</p>
+                    <!-- 상품 개요 -->
+                    <div class="about_product">
+                        <!-- 상품 이름 -->
+                        <p class="product_name">[KF365] 한돈 삼겹살 구이용 600g/1kg (냉장)</p>
+                        <!-- 상품 설명 -->
+                        <p class="product_info">미리 구비하는 인기 부위</p>
+                    </div>
+                    <!-- 상품 가격 -->
+                    <div class="price">
+                        <p>
+                            <!-- 원래 가격 -->
+                            <del>21,200원</del>
+                            <!-- 할인율 -->
+                            <span>20%</span>
+                            <!-- 최종가격 -->
+                            <strong>16,900원~</strong>
+                        </p>
+                    </div>
+                    <!-- 리뷰 -->
+                    <p class="product_review">9,999+</p>
+                    <!-- 컬리 온리 -->
+                    <p class="product_only">kulry only</p>
+                </li>
+                <!-- 각 상품 -->
+                <li class="product mid pro5">
+                    <!-- 상품 사진 -->
+                    <img class="product_img" src="/images/ku-5.jpg" alt="프링글스 사워크림앤어니언" />
+                    <!-- 카트 담기 버튼 -->
+                    <button class="product_toCart">
+                        <img src="/images/cart.svg" alt="장바구니" />
+                        담기
+                    </button>
+                    <!-- 배송타입 (샛별배송) -->
+                    <p class="del_type">샛별배송</p>
+                    <!-- 상품 개요 -->
+                    <div class="about_product">
+                        <!-- 상품 이름 -->
+                        <p class="product_name">[프링글스] 사워크림앤어니언 110g 12개</p>
+                        <!-- 상품 설명 -->
+                        <p class="product_info">빼곡하게 쌓은 감자칩</p>
+                    </div>
+                    <!-- 상품 가격 -->
+                    <div class="price">
+                        <p>
+                            <!-- 원래 가격 -->
+                            <del>42,000원</del>
+                            <!-- 할인율 -->
+                            <span>52%</span>
+                            <!-- 최종가격 -->
+                            <strong>20,140원</strong>
+                        </p>
+                    </div>
+                    <!-- 리뷰 -->
+                    <p class="product_review">37</p>
+                    <!-- 컬리 온리 -->
+                    <p class="product_only">kulry only</p>
+                </li>
+                <!-- 각 상품 -->
+                <li class="product pro6">
+                    <!-- 상품 사진 -->
+                    <div class="pro_img">
+                        <img class="product_img" src="/images/ku-6.jpg" alt="도톰 한돈 동그랑땡" />
+                        <!-- 최저가 도전 -->
+                        <p class="lower_price"><span>최저가 <br/>도전</span></p>
+                    </div>    
+                    <!-- 카트 담기 버튼 -->
+                    <button class="product_toCart">
+                        <img src="/images/cart.svg" alt="장바구니" />
+                        담기
+                    </button>
+                    <!-- 배송타입 (샛별배송) -->
+                    <p class="del_type">샛별배송</p>
+                    <!-- 상품 개요 -->
+                    <div class="about_product">
+                        <!-- 상품 이름 -->
+                        <p class="product_name">[KF365] 톰 한돈 동그랑땡 500g (냉동)</p>
+                        <!-- 상품 설명 -->
+                        <p class="product_info">맛도 포만감도 든든한</p>
+                    </div>
+                    <!-- 상품 가격 -->
+                    <div class="price">
+                        <p>
+                            <!-- 원래 가격 -->
+                            <del>9,900원</del>
+                            <!-- 할인율 -->
+                            <span>30%</span>
+                            <!-- 최종가격 -->
+                            <strong>6,920원</strong>
+                        </p>
+                    </div>
+                    <!-- 리뷰 -->
+                    <p class="product_review">999+</p>
+                    <!-- 컬리 온리 -->
+                    <p class="product_only">kulry only</p>
+                </li>
+            </ul>
+
+            <!-- 각 상품 li 담을 ul -->
+            <ul class="product_row">
+                <!-- 각 상품 -->
+                <li class="product pro7">
+                    <!-- 상품 사진 -->
+                    <img class="product_img" src="/images/ku-7.jpg" alt="얼큰 순대국" />
+                    <!-- 카트 담기 버튼 -->
+                    <button class="product_toCart">
+                        <img src="/images/cart.svg" alt="장바구니" />
+                        담기
+                    </button>
+                    <!-- 배송타입 (샛별배송) -->
+                    <p class="del_type">샛별배송</p>
+                    <!-- 상품 개요 -->
+                    <div class="about_product">
+                        <!-- 상품 이름 -->
+                        <p class="product_name">[신의주 찹쌀순대] 얼큰 순대국</p>
+                        <!-- 상품 설명 -->
+                        <p class="product_info">입에 착 감기는 칼칼함</p>
+                    </div>
+                    <!-- 상품 가격 -->
+                    <div class="price">
+                        <p>
+                            <!-- 원래 가격 -->
+                            <del>7,700원</del>
+                            <!-- 할인율 -->
+                            <span>18%</span>
+                            <!-- 최종가격 -->
+                            <strong>6,310원</strong>
+                        </p>
+                    </div>
+                    <!-- 리뷰 -->
+                    <p class="product_review">9,999+</p>
+                    <!-- 컬리 온리 -->
+                    <p class="product_only">kulry only</p>
+                </li>
+                <!-- 각 상품 -->
+                <li class="product mid pro8">
+                    <!-- 상품 사진 -->
+                    <img class="product_img" src="/images/ku-8.jpeg" alt="순살 감자탕" />
+                    <!-- 카트 담기 버튼 -->
+                    <button class="product_toCart">
+                        <img src="/images/cart.svg" alt="장바구니" />
+                        담기
+                    </button>
+                    <!-- 배송타입 (샛별배송) -->
+                    <p class="del_type">샛별배송</p>
+                    <!-- 상품 개요 -->
+                    <div class="about_product">
+                        <!-- 상품 이름 -->
+                        <p class="product_name">[남다른 감자탕] 순살 감자탕</p>
+                        <!-- 상품 설명 -->
+                        <p class="product_info">남다르게 푸짐한 한 그릇</p>
+                    </div>
+                    <!-- 상품 가격 -->
+                    <div class="price">
+                        <p>
+                            <!-- 원래 가격 -->
+                            <del>9,800원</del>
+                            <!-- 할인율 -->
+                            <span>10%</span>
+                            <!-- 최종가격 -->
+                            <strong>8,820원</strong>
+                        </p>
+                    </div>
+                    <!-- 리뷰 -->
+                    <p class="product_review"></p>
+                    <!-- 컬리 온리 -->
+                    <p class="product_only">kulry only</p>
+                </li>
+                <!-- 각 상품 -->
+                <li class="product pro9">
+                    <!-- 상품 사진 -->
+                    <img class="product_img" src="/images/ku-9.jpg" alt="한돈 앞다리 수육용" />
+                    <!-- 카트 담기 버튼 -->
+                    <button class="product_toCart">
+                        <img src="/images/cart.svg" alt="장바구니" />
+                        담기
+                    </button>
+                    <!-- 배송타입 (샛별배송) -->
+                    <p class="del_type">샛별배송</p>
+                    <!-- 상품 개요 -->
+                    <div class="about_product">
+                        <!-- 상품 이름 -->
+                        <p class="product_name">[KF365] 한돈 앞다리 수육용 600g~ (냉장)</p>
+                        <!-- 상품 설명 -->
+                        <p class="product_info">앞다리만의 쫄깃 담백함</p>
+                    </div>
+                    <!-- 상품 가격 -->
+                    <div class="price">
+                        <p>
+                            <!-- 원래 가격 -->
+                            <del>12,900원</del>
+                            <!-- 할인율 -->
+                            <span>7%</span>
+                            <!-- 최종가격 -->
+                            <strong>11,900원~</strong>
+                        </p>
+                    </div>
+                    <!-- 리뷰 -->
+                    <p class="product_review">999+</p>
+                    <!-- 컬리 온리 -->
+                    <p class="product_only">kulry only</p>
+                </li>
+            </ul>
+        </div>
+        <!-- 필터창 -->
+        <div class="fillter">
+            <!-- 타이틀 -->
+            <div class="fillter_tilte">
+                <h2>필터</h2>
+                <p>&#8635; 초기화</p>
+            </div>
+            <!-- 혜택목록 -->
+            <ul class="fillter_boon">
+                <li>
+                    <input type="checkbox" id="fillter_kurly_only"/>
+                    <label for="fillter_kurly_only">Kurly Only<sup>1087</sup></label>
+                </li>
+                <li>
+                    <input type="checkbox" id="fillter_members"/>
+                    <label for="fillter_members">멤버스 혜택<sup>994</sup></label>
+                </li>
+                <li>
+                    <input type="checkbox" id="fillter_view_kur"/>
+                    <label for="fillter_view_kur">뷰컬페<sup>79</sup></label>
+                </li>
+                <li>
+                    <input type="checkbox" id="fillter_coupon"/>
+                    <label for="fillter_coupon">쿠폰<sup>3319</sup></label>
+                </li>
+            </ul>
+            <!-- 카테고리 -->
+              <ul class="fillter_categori">
+                <li>
+                    <input type="checkbox" id="fillter_skin"/>
+                    <label for="fillter_skin">스킨케어·메이크업</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="fillter_noodle"/>
+                    <label for="fillter_noodle">면·양념·오일</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="fillter_hair"/>
+                    <label for="fillter_hair">헤어·바디·구강</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="fillter_healthy"/>
+                    <label for="fillter_healthy">건강식품</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="fillter_soup"/>
+                    <label for="fillter_soup">국·반찬·메인요리</label>
+                </li>
+                <button>카테고리 더보기 &gt;</button>
+            </ul>
+            <!-- 가격 -->
+              <ul class="fillter_price">
+                <li>
+                    <input type="radio" id="fillter_price_4000" name="fillter_price"/>
+                    <label for="fillter_price_4000">4,000원 미만</label>
+                    <a href="#top">1374</a>
+                </li>
+                <li>
+                    <input type="radio" id="fillter_price_10000" name="fillter_price"/>
+                    <label for="fillter_price_10000">4,000원 ~ 10,000원</label>
+                    <a href="#top">3379</a>
+                </li>
+                <li>
+                    <input type="radio" id="fillter_price_30000" name="fillter_price"/>
+                    <label for="fillter_price_30000">10,000원 ~ 30,000원</label>
+                    <a href="#top">3768</a>
+                </li>
+                <li>
+                    <input type="radio" id="fillter_price_30000over" name="fillter_price"/>
+                    <label for="fillter_price_30000over">30,000원 이상</label>
+                    <a href="#top">1335</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
