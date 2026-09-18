@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 연습03</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            width: 400px;
+            height: 500px;
+            margin: 0 auto;
+            border: 1px solid blue;
+            /* align-items: center;  한 줄 일 때 사용되므로, 부모의 높이가 없으면 무의미 */
+            flex-wrap: wrap;
+            /* 부모요소의 세로 중앙 정렬 */
+            align-content: center;
+            /* 부모요소의 가로 중앙 정렬 */
+            justify-content: center;
+        }
+
+        .container .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            border-radius: 5px;
+            margin: 5px;
+            color: white;
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        aligin-content 속성은 자식요소들이 줄바꿈되어 2줄 이상일 때,
+        줄 단위로 정렬하는 속성
+
+        aligin-items : 아이템(=자식요소들)이 한 줄 로 있을 때
+        aligin-content : 아이템(=자식요소들)이 2줄 이상(flex-wrap: wrap 로) 되었을 때, 전체 줄 덩어리를 정렬하는 속성
+    -->
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+        <div class="box">box9</div>
+
+    </div>
+</body>
+</html>

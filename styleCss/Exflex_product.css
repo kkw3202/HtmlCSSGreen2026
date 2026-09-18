@@ -1,0 +1,92 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pro_container{
+    width: 70%;
+    margin: 10rem auto;
+}
+
+.product_wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.porduct{
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 사진, 상품명 */
+.porduct a{
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+}
+
+/* 사진 전체 */
+.pro_img{
+    position: relative;
+}
+
+/* 사진 - 이미지 */
+.pro_img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 사진 - 위시리스트에 추가 버튼*/
+.pro_img button{
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    border: none;
+    width: 2em;
+    height: 2em;
+    background-color: #333;
+    opacity: 50%;
+    border-radius: 50%;
+    color: #f2f2f2;
+}
+
+.pro_img button:hover{
+    width: 3em;
+    height: 3em;
+    opacity: 100%;
+    color: red;
+}
+
+/* 가격 전체 */
+.price{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 원가 */
+.price del{
+    width: 100%;
+    color: #626262;
+}
+
+/* 할인율, 최종가격 공통 */
+.price span,
+.price strong{
+    font-weight: 800;
+}
+
+/* 할인율 */
+.price span{
+    flex:1;
+    color: rgb(192, 16, 16);
+}
+
+/* 최종가격 */
+.price strong{
+    flex: 3;
+}

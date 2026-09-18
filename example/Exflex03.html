@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body{
+            height: 100%;
+        }
+        body{
+            background-color: #bbbbbb;
+            Display : flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 55rem; */
+        }
+
+        .login-box{
+            background-color: #fff;
+            width: 22rem;
+            height: 17rem;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 1%;
+            padding-top: 1.5%;
+        }
+
+        .login-box input,
+        .login-box button,
+        .login-box h2{
+            width: 90%;
+            margin: 0.3rem auto;
+        }
+
+        .login-box h2,
+        .login-box input{
+            flex: 1;
+        }
+
+
+        .login-box h2{
+            margin-bottom: 0.9rem;
+        }
+
+        .login-box input{
+            border: 1px solid #bbbbbb;
+            border-radius: 5px;
+            height: 2.5rem;
+            padding-left: 1em;
+        }
+
+        .login-box button{
+            color: #fff;
+            background-color: #FF6347;
+            border-radius: 5px;
+            border: none;
+            flex: 1.1;
+            cursor: pointer;
+        }
+
+        .login-box button:hover{
+            background-color: #ff3f1e;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+        <input type="text" placeholder="아이디 입력" />
+        <input type="password" placeholder="비밀번호 입력" />
+        <button>로그인</button>
+    </div>
+</body>
+</html>
