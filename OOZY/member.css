@@ -1,0 +1,198 @@
+@charset "UTF-8";
+*{
+    /* border: 1px solid red; */
+}
+/* 회원가입 로고부 */
+.join_window{
+    width: 414px;
+    margin: 30px auto;
+    border: 2px solid #22352a;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.join_top .logo{
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #14563a;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.join_top h3,
+.join_top p{
+    text-align: center;
+}
+
+.join_top p{
+    font-size: 13px;
+}
+
+/* 회원가입 메인부 */
+.join_main{
+    margin: 15px 0;
+}
+
+.join_main ul li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.join_main ul li label{
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.join_main ul li label span{
+    color: rgb(250, 49, 23);
+    display: inline-block;
+    font-weight: 500;
+}
+
+.join_main ul li label span.join_choose{
+    color: #646464;
+    font-size: 80%;
+}
+
+.join_main ul li input[type="email"],
+.join_main ul li input[type="password"],
+.join_main ul li input[type="text"],
+.join_main ul li input[type="tel"],
+.join_main ul li input[type="date"]{
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    height: 35px;
+    flex-grow: 1;
+    padding: 5px 10px;
+}
+
+.join_main ul li button,
+.etc a{
+    border: 2px solid #14563a;
+    color: #14563a;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.join_main ul li button{
+    margin-left: 5px;
+}
+
+.join_main ul li button:hover,
+.etc a:hover{
+    color: #fff;
+    background-color: #3c5f4b;
+}
+
+/* 성별 */
+.join_main ul li div #gender_female,
+.join_main ul li div #gender_male,
+.join_main ul li div #gender_noinfo{
+    /* opacity: 0; */
+    display: none;
+}
+
+.join_main ul li div .join_gender{
+    display: inline-block;
+    border: 1px solid #646464;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #646464;
+    border-radius: 5px;
+    
+}
+
+
+/* 동의 */
+.join_agreement{
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    padding: 10px;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-content: ; */
+}
+
+/* .join_agreement .all_agree_wrap,
+.join_agreement hr{
+    width: 100%;
+} */
+
+.join_agreement div{
+    margin: 5px 0;
+}
+
+.join_agreement .all_agree_wrap{
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 10px;
+    margin-bottom: 10px;    
+}
+
+.join_agreement .all_agree_wrap label{
+    font-weight: bold;
+}
+
+.join_agreement .all_agree_wrap .agree_title{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.join_agreement a{
+    text-decoration: underline;
+    float: right;
+    font-size: 80%;
+    color: #646464;
+}
+
+.join_agreement div span{
+    color: #14563a;
+    font-size: 80%;
+    margin: 0 2px;
+}
+
+.join_main button[type="submit"]{
+    width: 100%;
+    background-color: #14563a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 15px 0 5px 0;
+    cursor: pointer;
+}
+
+.join_main button[type="submit"]:hover{
+    background-color: #114731;
+    color: #fff;
+}
+
+.join_main button[type="submit"],
+.etc a{
+    height: 35px;
+}
+
+.etc{
+    border-top: 1px solid #d1d1d1;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.etc p{
+    width: 100%;
+    font-size: 13px;
+    color: #646464;
+}
+
+.etc a{
+    width: 100%;
+    margin: 5px 0;
+}
