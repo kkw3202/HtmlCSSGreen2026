@@ -25,7 +25,7 @@ a{
     position: fixed;
     border-top: 1px solid #d1d1d1;
     border-bottom: 1px solid #d1d1d1;
-    width: 100%;
+    width: 120rem;
     background-color: #fff;
     padding: 15px 350px;
 
@@ -121,6 +121,10 @@ a{
     padding-top: 182px;
 }
 
+.store{
+    /* background-color: #727272; */
+}
+
 /* 섹션- 상품추천 */
 .product_wrap{
     display: flex;
@@ -145,12 +149,13 @@ a{
 
 /* 상품 개별 */
 .product_wrap .product{
-    width: 230px;
+    width: 210px;
 }
 
 .product_wrap .product a img{
-    width: 230px;
-    height: 230px;
+    width: 210px;
+    height: 210px;
+    border-radius: 10px;
 }
 
 /* 프라임 */
@@ -163,6 +168,7 @@ a{
     background-color: #111;
     font-weight: bold;
     color: #fff;
+    margin-top: 5px;
 }
 
 .product_wrap .product .prime_flase{
